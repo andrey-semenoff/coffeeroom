@@ -1,0 +1,49 @@
+/*! ===== footer styles ===== */
+
+footer.footer {
+	background-color: $brown;
+}
+
+.bottom-line {
+  padding: 10px 15px;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.copyright {
+  float: left;
+  padding-top: 5px;
+
+  @include media(480) {
+    float: none;
+    text-align: center;
+  }
+}
+
+.copyright__text {
+}
+
+.skylogic {
+  float: right;
+
+  @include media(480) {
+    float: none;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+.skylogic__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skylogic__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.skylogic__img {
+
+}

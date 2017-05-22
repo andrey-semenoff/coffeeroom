@@ -1,0 +1,71 @@
+/*! ===== header ===== */
+
+header.header {
+  background-color: $brown;
+}
+
+/*! ===== logo ===== */
+.logo {
+  float: left;
+  margin-left: 100px;
+
+  @include media(992) {
+    margin-left: 0;
+  }
+  @include media(768) {
+    float: none;
+    text-align: center;
+  }
+}
+
+.logo__link {
+  display: inline-block;
+}
+
+/*! ===== contacts ===== */
+.contacts {
+  float: right;
+
+  @include media(768) {
+    float: none;
+    text-align: center;
+  }
+}
+
+/*! ===== phones ===== */
+.phones {
+
+}
+
+.phones__item {
+  display: block;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.phones__link {
+  color: #fff;
+
+  &:hover {
+    color: rgba(#fff, 0.5);
+  }
+}
+
+
+/*! ===== social ===== */
+.social {
+  text-align: right;
+}
+
+.social__item {
+  display: inline-block;
+  margin: 15px 10px;
+}
+
+.social__link {
+  color: #fff;
+  
+  &:hover {
+    color: rgba(#fff, 0.5);
+  }
+}

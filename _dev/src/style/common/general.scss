@@ -1,0 +1,180 @@
+/*! ===== General styles ===== */
+
+@include font-face('PTSans-Bold', '../fonts');
+@include font-face('PTSans-Regular', '../fonts');
+@include font-face('FontAwesome', '../fonts');
+
+$brown: #432d2f;
+$black_text: #4e4e4e;
+$red_text: #bb0a29;
+
+$PTSans-Regular: "PTSans-Regular", Helvetica, sans-serif;
+$PTSans-Bold: "PTSans-Bold", Helvetica, sans-serif;
+
+$container-width: 1284px;
+$body-color: #fff;
+$body-font: $PTSans-Regular;
+$body-font-color: #000;
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 100%;
+  color: $body-font-color;
+  background-color: $body-color;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*! --- Preload images --- */
+// body:before {
+//   content: '';
+//   background:
+//     url(../img/clients/kaspersky_color.jpg),
+// }
+
+a, a:hover, a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+._container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+._row {
+  @include clearfix();  
+}
+
+
+/*! --- icons --- */
+//.icon {
+//  display: inline-block;
+//  background-image: url(../img/spriteIcons.png);
+//  vertical-align: middle;
+//}
+
+//@include icons($icons-sprites);
+/*! --- END icons --- */
+
+
+/*! --- standart buttons --- */
+.button {
+  display: inline-block;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/*! --- standart title --- */
+.title {
+  position: relative;
+  padding: 30px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 185px;
+    border: 1px solid #000;
+  }
+}
+
+
+/*! --- owl-carousel --- */
+
+.owl-carousel {
+  //max-width: 925px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 65px;
+
+  @include media(500) {
+    width: 80%;
+  }
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -5%;
+
+  @include media(500) {
+    left: -9%;
+  }
+}
+
+.owl-next {
+  right: -5%;
+
+  @include media(500) {
+    right: -9%;
+  }
+}
+
+.owl-next .owl-nav_arrow {
+  // transform: rotate(180deg);
+}
+
+.owl-nav_arrow {
+  // width: 28px;
+  // height: 46px;
+}
+
+/*! --- google-map --- */
+
+.google-map {
+  position: relative;
+}
+
+.google-map__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
