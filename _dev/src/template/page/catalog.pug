@@ -1,0 +1,344 @@
+extends ../main
+
+block vars
+	- var page_title = "Каталог товаров"
+
+block content
+
+	// ====== slider =======
+	.slider.slider-catalog
+		._container
+
+			.slider__text
+				h1.slider__title возьми тепло с собой
+
+				h2.slider__subtitle
+					div.slider__subtitle-bold 20 % скидка
+					div на кофе с собой
+
+	// ====== catalog =======
+	.catalog
+		._container
+
+			._row
+
+				.catalog__sidebar
+					form.form_search(action="#")
+						input.form_search__input(type="text" name="search" placeholder="Поиск")
+						.icon.icon-lupa
+
+					// ====== categories =======
+					.categories
+						.categories__title каталог товаров
+
+						ul.categories__list
+
+							li.categories__item
+								a.categories__link(href="#") Кофе
+
+								ul.categories__sublist
+									li.categories__subitem
+										a.categories__link.categories__link_active(href="#") Кофе в зернах
+									li.categories__subitem
+										a.categories__link(href="#") Кофе в зернах
+									li.categories__subitem
+										a.categories__link(href="#") Кофе в зернах
+									li.categories__subitem
+										a.categories__link(href="#") Кофе в зернах
+									li.categories__subitem
+										a.categories__link(href="#") Кофе в зернах
+
+							li.categories__item
+								a.categories__link(href="#") Оборудование
+
+								ul.categories__sublist
+									li.categories__subitem
+										a.categories__link(href="#") Вспениватели молока
+									li.categories__subitem
+										a.categories__link(href="#") Автоматические кофемашины
+									li.categories__subitem
+										a.categories__link(href="#") Кофе по-турецки
+									li.categories__subitem
+										a.categories__link(href="#") Кофемашины на капсулах
+									li.categories__subitem
+										a.categories__link(href="#") Кофемашины на монодозах
+
+							li.categories__item
+								a.categories__link(href="#") Бренды
+
+								ul.categories__sublist
+									li.categories__subitem
+										a.categories__link(href="#") Chimbali
+									li.categories__subitem
+										a.categories__link(href="#") Faema
+									li.categories__subitem
+										a.categories__link(href="#") Casadio
+									li.categories__subitem
+										a.categories__link(href="#") SanMarco
+									li.categories__subitem
+										a.categories__link(href="#") Elektra
+
+				// ====== catalog__products =======
+				.catalog__products
+					.breadcrumbs
+						ul.breadcrumbs__list
+							li.breadcrumbs__item
+								a.breadcrumbs__link(href="#") Главная
+							li.breadcrumbs__item
+								a.breadcrumbs__link(href="#") Каталог товаров
+							li.breadcrumbs__item
+								span.breadcrumbs__link.breadcrumbs__link_active Кофе молотый
+
+					ul.products__list
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_1.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_1")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_2.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_2")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_3.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_3")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_4.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_4")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_5.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_5")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_6.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_6")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_7.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_7")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_8.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_8")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_9.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_9")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_10.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_10")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_11.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_11")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+
+						.products__item
+							.product__img-holder
+								img.products__img(src="img/products/product_12.png")
+								.product__info_inner
+									.product__name Lavazza молотый
+									.product__status В наличии
+									.product__price 250 грн
+									button.button.product__button(type="button" role="open:form") Купить
+
+									form.products__item-form
+										input(type="hidden" name="product" value="product_12")
+										input.products__item-input(type="text" name="name" placeholder="Имя")
+										input.products__item-input(type="tel" name="phone" placeholder="Телефон")
+										button.button.product__button(type="submit" role="send:form") Купить
+
+							.product__info
+								.product__name Lavazza молотый
+								.product__price 250 грн
+
+					// ====== pagination =======
+					.pagination
+
+						a.pagination__btn.pagination__btn_prev.fa.fa-angle-double-left.fa-2x(href="#")
+
+						ul.pagination__list
+							li.pagination__item
+								span.pagination__link.pagination__link_active 1
+							li.pagination__item
+								a.pagination__link(href="#") 2
+
+						a.pagination__btn.pagination__btn_next.fa.fa-angle-double-right.fa-2x(href="#")

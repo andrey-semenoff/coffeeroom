@@ -6,7 +6,8 @@
 
 $brown: #432d2f;
 $black_text: #4e4e4e;
-$red_text: #bb0a29;
+//$red_text: #bb0a29;
+$red_text: red;
 
 $PTSans-Regular: "PTSans-Regular", Helvetica, sans-serif;
 $PTSans-Bold: "PTSans-Bold", Helvetica, sans-serif;
@@ -81,13 +82,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /*! --- icons --- */
-//.icon {
-//  display: inline-block;
-//  background-image: url(../img/spriteIcons.png);
-//  vertical-align: middle;
-//}
+.icon {
+  display: inline-block;
+  background-image: url(../img/spriteIcons.png);
+  vertical-align: middle;
+}
 
-//@include icons($icons-sprites);
+@include icons($icons-sprites);
 /*! --- END icons --- */
 
 

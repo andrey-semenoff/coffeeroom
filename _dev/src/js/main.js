@@ -55,6 +55,42 @@ $(function () {
 			$(".burger").removeClass('burger_close');
 		}
 	});
+
+
+	//product__button
+	$(".product__button[role='open:form']").click(function () {
+		var $this = $(this),
+			$form = $this.siblings(".products__item-form"),
+			$img = $this.parents(".product__img-holder").children(".products__img");
+
+		$this.hide();
+		$form.show().children('input').first().focus();
+		$img.addClass("products__img_sm");
+
+	});
+
+	$(".products__item .product__img-holder").mouseleave(function () {
+		var $this = $(this),
+			$btn = $this.find(".product__button[role='open:form']"),
+			$form = $this.find(".products__item-form"),
+			$img = $this.children(".products__img");
+
+		$btn.show();
+		$form.hide();
+		$img.removeClass("products__img_sm");
+	});
+
+	//.categories__item .categories__link
+	$(".categories__item .categories__link").click(function (e) {
+		e.preventDefault();
+
+		var $this = $(this),
+			$sublist = $this.siblings(".categories__sublist");
+
+		$sublist.slideToggle();
+
+	})
+
 });
 
 

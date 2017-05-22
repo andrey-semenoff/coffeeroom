@@ -1,6 +1,6 @@
 @import "common/_functions";
 
-//@import "common/_spriteIcons";
+@import "common/_spriteIcons";
 
 @import "common/_mixins";
 
@@ -11,5 +11,7 @@
 @import "section/menu";
 
 @import "page/index";
+
+@import "page/catalog";
 
 @import "section/footer";

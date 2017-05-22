@@ -1,7 +1,7 @@
 /*! ===== slider ===== */
 .slider {
   padding: 90px 0 130px;
-  background: #fff url(../img/bg-slider.jpg) center no-repeat;
+  background: #fff url(../img/bg-slider-home.jpg) center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 
@@ -13,6 +13,10 @@
     background: none;
     padding-bottom: 25px;
   }
+}
+
+.slider-catalog {
+  background-image: url(../img/bg-slider-catalog.jpg);
 }
 
 .slider__text {
