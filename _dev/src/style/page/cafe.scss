@@ -1,0 +1,124 @@
+/*! ===== cafe ===== */
+.cafe {
+
+}
+
+.cafe__slider {
+  @extend .study__slider;
+  background-image: url(../img/cafe/bg-cafe.jpg);
+}
+
+.cafe__title {
+  @extend .study__title;
+  text-transform: none;
+}
+
+.cafe__subtitle {
+  @extend .study__subtitle;
+}
+
+.cafe__btn-scroll {
+  @extend .study__btn-scroll;
+}
+
+/*! ===== cafe__about ===== */
+.cafe__about {
+  text-align: center;
+}
+
+.cafe__about-title {
+  margin-top: 65px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.cafe__about-text {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+
+/*! ===== .cafe__about-carousel ===== */
+.cafe__about-carousel {
+
+}
+
+.owl-carousel[data-type='cafe__about'] {
+
+  .owl-item {
+    transition: transform 0.5s;
+  }
+}
+
+.mini {
+  transform: scale(0.5) !important;
+}
+
+
+/*! ===== cafe__map ===== */
+.cafe__map {
+
+}
+
+.cafe__map-title {
+
+}
+
+.cafe__map-iframe {
+  margin-top: 35px;
+}
+
+
+/*! ===== cafe__order ===== */
+.cafe__order {
+  padding: 75px 0 95px;
+}
+
+.cafe__form {
+  width: 853px;
+  margin: auto;
+  padding: 25px 90px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba($black_text, 0.3);
+}
+
+.cafe__form-title {
+  padding-top: 0;
+}
+
+.cafe__form-left {
+  float: left;
+  width: 45%;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+
+.cafe__form-right {
+  float: right;
+  width: 55%;
+  padding-left: 15px;
+  margin-top: 15px;
+}
+
+.cafe__form-label {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.cafe__form-label-text {
+
+}
+
+.cafe__form-input {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 5px;
+}
+
+.cafe__form-textarea {
+  width: 100%;
+  height: 145px;
+  resize: vertical;
+}

@@ -7,14 +7,99 @@ block vars
 
 block content
 
-	// ====== slider =======
-	.slider
-		._container
+	// ====== cafe =======
+	.cafe
 
-			.slider__text
-				h1.slider__title возьми тепло с собой
+		// ====== breadcrumbs =======
+		.breadcrumbs
+			._container
+				ul.breadcrumbs__list
+					li.breadcrumbs__item
+						a.breadcrumbs__link(href="#") Главная
+					li.breadcrumbs__item
+						span.breadcrumbs__link.breadcrumbs__link_active Кафе
 
-				h2.slider__subtitle
-					div.slider__subtitle-bold 20 % скидка
-					div на кофе с собой
+		// ====== cafe__slider =======
+		.cafe__slider
 
+			._container
+
+				h1.cafe__title Успей забронировать столик и получи скидку 10% на все кофейные напитки!
+
+				h2.cafe__subtitle Каждую субботу с 10.00 до 18.00 бронируй столик и получай скидку 10% на все кофейные напитки.
+
+				a.cafe__btn-scroll(href="#cafe__form" data-scroll) Забронировать
+
+		// ====== cafe__about =======
+		.cafe__about
+			._container
+
+				.cafe__about-title Уютное и теплое кафе "Coffee Room" приглашает Вас на чашечку ароматного кофе
+
+				.cafe__about-text
+					p Хотите отдохнуть и расслабиться в спокойной и приятной атмосфере за чашечкой кофе со своими близкими или друзьями?
+					p Тогда мы рады пригласить Вас в новое и уютное кафе в городе одесса, где Вы сможете приятно провести свое время.
+
+				.cafe__about-carousel
+					._container
+
+						.owl-carousel(data-type="cafe__about")
+
+							.cafe__about-carousel-item
+								.cafe__about-carousel-holder
+									img.cafe__about-carousel-img(src="img/cafe/slider/slide-1.jpg" alt="slide-1")
+							.cafe__about-carousel-item
+								.cafe__about-carousel-holder
+									img.cafe__about-carousel-img(src="img/cafe/slider/slide-1.jpg" alt="slide-1")
+							.cafe__about-carousel-item
+								.cafe__about-carousel-holder
+									img.cafe__about-carousel-img(src="img/cafe/slider/slide-1.jpg" alt="slide-1")
+							.cafe__about-carousel-item
+								.cafe__about-carousel-holder
+									img.cafe__about-carousel-img(src="img/cafe/slider/slide-1.jpg" alt="slide-1")
+
+		.cafe__map
+			._container
+				.title.cafe__map-title Схема проезда
+
+			.cafe__map-iframe
+				// ====== google-map =======
+				.google-map(onMouseLeave="document.querySelector('.google-map__overlay').style.pointerEvents=''")
+					.google-map__overlay(onClick="style.pointerEvents='none'")
+					iframe(src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d382.9518520517521!2d30.72452958661035!3d46.491395445711184!2m2!1f0!2f0.2602826021433933!3m2!1i1024!2i768!4f48.030205300662466!3m3!1m2!1s0x40c631c1ab799d29%3A0x648a7bb538623a68!2z0LLRg9C70LjRhtGPINCf0LDRgdGC0LXRgNCwLCAyMiwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e1!3m2!1sru!2sua!4v1495534140151" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen)
+
+		.cafe__order
+			form.cafe__form#cafe__form
+				.title.cafe__form-title бронировать столик
+
+				._row
+
+					.cafe__form-left
+						label.cafe__form-label
+							.cafe__form-label-text Ваше имя
+							input.cafe__form-input(type="text" name="name")
+						label.cafe__form-label
+							.cafe__form-label-text Телефон
+							input.cafe__form-input(type="tel" name="phone")
+
+					.cafe__form-right
+						label.cafe__form-label
+							.cafe__form-label-text Количество гостей
+							input.cafe__form-input(type="text" name="guests")
+						label.cafe__form-label
+							.cafe__form-label-text Желаемая дата
+							input.cafe__form-input(type="date" name="date")
+
+					._row
+						.cafe__form-left
+							label.cafe__form-label
+								.cafe__form-label-text Email
+								input.cafe__form-input(type="email" name="email")
+							label.cafe__form-label
+								.cafe__form-label-text Комментарий
+								textarea.cafe__form-textarea(name="comment")
+
+							button.study-form__button(type="submit") Забронировать
+
+						.cafe__form-right
+							img.cafe__form-img(src="img/cafe/coffee-cup.png" alt="coffee cup")

@@ -32,6 +32,72 @@ $(function () {
   	}
   });
 
+  // owl-carousel init
+  $(".owl-carousel[data-type='objarka__steps']").owlCarousel({
+  	items: 3,
+  	loop: true,
+  	smartSpeed: 1000,
+  	autoHeight: true,
+  	nav: true,
+	dots: false,
+  	navText: [
+  		"<span class='icon icon-arrow-left_big'></span>",
+  		"<span class='icon icon-arrow-right_big'></span>"
+  	],
+  	responsive: {
+  		992: {
+        items: 3
+      },
+
+      550: {
+      	items: 2
+      },
+
+      0: {
+      	items: 1
+      }
+  	}
+  });
+
+  // owl-carousel init
+  var $cafe_about_carousel = $(".owl-carousel[data-type='cafe__about']");
+
+	$cafe_about_carousel.on('initialized.owl.carousel', function (e) {
+		console.log("init")
+		$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(0).addClass('mini');
+		$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(2).addClass('mini');
+	});
+
+	$cafe_about_carousel.owlCarousel({
+  	items: 3,
+  	loop: true,
+  	smartSpeed: 1000,
+  	autoHeight: true,
+  	// nav: true,
+  	navText: [
+  		"<span class='icon icon-arrow-left_big'></span>",
+  		"<span class='icon icon-arrow-right_big'></span>"
+  	],
+  	responsive: {
+  		992: {
+        items: 3
+      },
+
+      550: {
+      	items: 2
+      },
+
+      0: {
+      	items: 1
+      }
+  	}
+  }).on('translated.owl.carousel', function (e) {
+	  $(".owl-carousel[data-type='cafe__about']").find('.owl-item').removeClass('mini');
+	  $(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(0).addClass('mini');
+	  $(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(2).addClass('mini');
+	});
+
+
 
 	// burger-menu
 	$(".menu").on("click", ".burger", function() {

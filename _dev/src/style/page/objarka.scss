@@ -1,0 +1,93 @@
+/*! --- objarka --- */
+.objarka {
+
+}
+
+.objarka__about {
+  margin-top: 30px;
+
+}
+
+.objarka__title {
+  font-size: 30px;
+}
+
+.objarka__text {
+  //margin-top: 15px;
+}
+
+.objarka__text_left {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
+
+.objarka__text_right {
+  float: right;
+  width: 50%;
+  padding-left: 15px;
+}
+
+.objarka__text-block {
+  margin-top: 30px;
+  line-height: 1.3rem;
+}
+
+.objarka__text-img {
+
+}
+
+/*! --- objarka__steps --- */
+.objarka__steps {
+  margin-top: 40px;
+}
+
+.objarka__steps-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.objarka__steps-caruosel {
+  background: #502616 url(../img/objarka/bg-objarka.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+
+  .owl-carousel {
+    margin-top: 40px;
+    padding: 25px 0;
+  }
+}
+
+.objarka__steps-holder {
+  width: 290px;
+  height: 290px;
+  margin: auto;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 40px 30px 25px;
+  text-align: center;
+}
+
+.icon.icon-quotes_big {
+
+}
+
+.objarka__steps-item-title {
+  margin-top: 15px;
+  font-family: $PTSans-Bold;
+}
+
+.objarka__steps-item-text {
+  margin-top: 5px;
+  line-height: 1.5rem;
+}
+
+.blog__title {
+  margin-top: 50px;
+  padding-bottom: 0;
+
+  &:after {
+    display: none;
+  }
+}
