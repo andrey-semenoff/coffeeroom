@@ -1,6 +1,9 @@
 extends ../main
+
 block vars
-	- var page_title = "Обучение"
+	-
+		var page_title = "Обучение"
+		var active = "study"
 
 block content
 
@@ -13,7 +16,7 @@ block content
 				li.breadcrumbs__item
 					a.breadcrumbs__link(href="#") Главная
 				li.breadcrumbs__item
-					a.breadcrumbs__link(href="#") Обучение
+					span.breadcrumbs__link.breadcrumbs__link_active Обучение
 
 	// ====== study__slider =======
 	.study__slider
@@ -24,17 +27,27 @@ block content
 
 			h2.study__subtitle Записаться на курсы бариста в Украине можно прямо сейчас, заполнив форму ниже!
 
-			a.study__scroll(href="#" data-scroll) Записаться на курс
+			a.study__btn-scroll(href="#study-form" data-scroll) Записаться на курс
 
-			.study__text
-				._row
-					.study__text_left
-						p
-						p
+	.study__text
+		._container
+			._row
+				.study__text_left
+					p Бариста – это профессия вашей мечты? Мы вас прекрасно понимаем!
+					p Мы научим вас всему, что должен знать и уметь профессиональный бариста. Курсы проводятся в г. Одесса в течение четырёх дней, поэтому вы сможете приехать из любого города Украины и пройти обучение у нас.
+					p Особенности курса бариста в Одессе:
+					p Тренер – мастер-бариста Иванов Иван, опыт работы – 5 года. Ученик легендарного французского мастера кофе Жульена Лорана, призёр чемпионатов среди барист города Киева.
+					p Продолжительность курсов бариста в Украине b52 – 4 дня (каждый день по 3 часа, итого 12 часов).
+					p 10 часов из 12 посвящены практическим занятиям. В течение этого времени вы приготовите около 100 чашек кофе, 23 кофейных напитка и множество алкогольных коктейлей на основе кофе! Современная методика обучения позволит в индивидуальной форме передать Вам все наши знания и умения, за короткий промежуток времени и реализавать Ваши цели и желания!
 
-					.study__text_right
-						p
-						p
+				.study__text_right
+					p Порядок обучения рисование на кофе
+					p Первый день в школе бариста в Одессе – изучение истории кофейной культуры. Вы узнаете, что такое кофе, как оно появилось и как популяризировалось. Познакомитесь с существующими сортами кофе, их различиями и особенностями. Также в течение первого дня учёбы предусмотрено приготовление четырёх основных кофейных напитков.
+					p Второй и третий дни посвящены обучению латте-арт. В течение этих двух дней вы приготовите множество кофейных напитков, а затем будете учиться рисовать на них!
+					p Курсы рисования на кофе – важнейшая часть обучения.Четвёртый день посвящён проверке полученных практических и теоретических знаний. На экзамене будут оценены знания, полученные в рамках курса.
+					p По завершению обучения выдается сертификат об окончании уроков бариста! В Киеве, Одессе и по всей Украине вы сможете использовать полученный сертификат как гарантию полученных знаний.
+					p Будем рады передать Вам свои знания и умения!
+
 
 	// ====== feat =======
 	.feat
@@ -77,10 +90,27 @@ block content
 
 	// ====== study-form-holder =======
 	.study-form-holder
-		form.study-form
-			.study-form__title Записаться на курс
-			input.study-form__input(type="text" placeholder="Ваше имя")
-			input.study-form__input(type="tel" placeholder="Телефон")
-			input.study-form__input(type="email" placeholder="Email")
-			textarea.study-form__textarea(name="comment" placeholder="Комментарий")
+		form.study-form#study-form
+
+			.title.study-form__title Записаться на курс
+
+			label.study-form__label
+				.study-form__label-text Ваше имя
+				input.study-form__input(type="text" name="name" placeholder="")
+
+			label.study-form__label
+				.study-form__label-text Телефон
+				input.study-form__input(type="tel" name="phone" placeholder="")
+
+			label.study-form__label
+				.study-form__label-text Email
+				input.study-form__input(type="email" name="email" placeholder="")
+
+			label.study-form__label
+				.study-form__label-text Комментарий
+				textarea.study-form__textarea(name="comment" placeholder="")
+
 			button.study-form__button(type="submit") Записаться на курс
+
+		img.study-form-img.study-form-img__cup(src="img/study/coffee-cup.png" alt="coffee cup")
+		img.study-form-img.study-form-img__beans(src="img/study/coffee-beans.jpg" alt="coffee beans")

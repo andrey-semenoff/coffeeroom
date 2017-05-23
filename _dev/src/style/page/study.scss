@@ -3,86 +3,154 @@
 
 }
 
-.study__title {
+.study__slider {
+  margin-top: 35px;
+  padding: 30px 0 40px;
+  background: #000 url(../img/study/bg-slider-study.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
 
+.study__title {
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .study__subtitle {
-
+  font-size: 20px;
+  margin-top: 15px;
 }
 
-.study__scroll {
-
+.study__btn-scroll {
+  display: inline-block;
+  width: 244px;
+  height: 50px;
+  margin-top: 100px;
+  border: 1px solid #fff;
+  background-color: rgba(#fff, 0.3);
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
 }
 
 .study__text {
-
+  margin-top: 75px;
 }
 
 .study__text_left {
-
+  float: left;
+  width: 50%;
+  padding-right: 15px;
 }
 
 .study__text_right {
-
+   float: right;
+   width: 50%;
+   padding-left: 15px;
 }
 
 
 /*! ===== feat ===== */
 .feat {
-
+  margin-top: 75px;
 }
 
 .feat__title {
-
+  font-size: 30px;
+  text-align: center;
 }
 
 .feat__list {
-
+  font-size: 0;
+  text-align: center;
 }
 
 .feat__item {
-
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-top: 45px;
+  padding: 0 40px;
+  font-size: 16px;
 }
 
 .feat__item-title {
-
+  margin-top: 15px;
+  font: 18px $PTSans-Bold;
 }
 
 .feat__item-text {
-
+  margin-top: 5px;
 }
 
 
 /*! ===== study-form ===== */
 .study-form-holder {
-
+  position: relative;
+  padding: 110px 0 100px;
+  overflow: hidden;
 }
 
 .study-form {
-
+  position: relative;
+  width: 450px;
+  margin: auto;
+  padding: 30px 90px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba($black_text, 0.3);
 }
 
 .study-form__title {
+  margin-bottom: 35px;
+  padding: 0 0 15px;
+  font-size: 25px;
+}
 
+.study-form__label {
+  display: block;
+  margin-top: 15px;
 }
 
 .study-form__input {
-
-}
-
-.study-form__input {
-
-}
-
-.study-form__input {
-
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  line-height: 35px;
+  border: 1px solid rgba($black_text, 0.2);
 }
 
 .study-form__textarea {
-
+  width: 100%;
+  height: 145px;
+  padding: 5px;
+  resize: vertical;
+  border: 1px solid rgba($black_text, 0.2);
 }
 
 .study-form__button {
+  display: block;
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  margin: 15px auto 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 18px;
+}
 
+.study-form-img {
+  position: absolute;
+  bottom: 70px;
+
+}
+
+.study-form-img__cup {
+  left: 25px;
+}
+
+.study-form-img__beans {
+  right: -310px;
+  z-index: -1;
 }
