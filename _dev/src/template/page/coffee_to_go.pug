@@ -6,15 +6,47 @@ block vars
 		var active = "coffee_to_go"
 
 block content
+	// ====== cafe =======
+	.coffee
 
-	// ====== slider =======
-	.slider
-		._container
+		// ====== breadcrumbs =======
+		.breadcrumbs
+			._container
+				ul.breadcrumbs__list
+					li.breadcrumbs__item
+						a.breadcrumbs__link(href="#") Главная
+					li.breadcrumbs__item
+						span.breadcrumbs__link.breadcrumbs__link_active= page_title
 
-			.slider__text
-				h1.slider__title возьми тепло с собой
+		// ====== coffee__slider =======
+		.coffee__slider
 
-				h2.slider__subtitle
-					div.slider__subtitle-bold 20 % скидка
-					div на кофе с собой
+		// ====== coffee__text =======
+		.coffee__text-holder
+			._container
 
+				.title.coffee__text-title Любишь кофе так же сильно, как любим его мы?
+
+				._row
+					.coffee__text.coffee__text_left
+
+						img.coffee__text-img(src="img/coffee_to_go/img-text.jpg" alt="coffee-to_go")
+
+						.coffee__text-inner-title АКЦИЯ!
+
+						p Покупайте кофе с собой в будние дни<br>с 9.00 до 12.00 и получайте свежую выпечку<br>в ПОДАРОК!
+						p Если Вы не представляете свой день без бодрящего эспрессо или ароматного капучино, тогда не упустите возможность сэкономить.
+						p Приходите Coffee Room и наслаждайтесь кофе. У нас Вы всегда можете взять кофе с собой и прогуляться с ароматным бодрящим напитком в руках.
+						p В этой уютной кофейне для вас откроется целый мир кофейных коктейлей и напитков!
+						p Вы получите ни с чем не сравнимое удовольствие! И еще не раз придете сюда, за чашечкой любимого кофе!Завтрак, обед или ужин? Каждый выбирает свое время для кофе!
+
+		// ====== coffee__map =======
+		.coffee__map
+			._container
+				.title.coffee__map-title Схема проезда
+
+			.coffee__map-iframe
+				// ====== google-map =======
+				.google-map(onMouseLeave="document.querySelector('.google-map__overlay').style.pointerEvents=''")
+					.google-map__overlay(onClick="style.pointerEvents='none'")
+					iframe(src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d382.9518520517521!2d30.72452958661035!3d46.491395445711184!2m2!1f0!2f0.2602826021433933!3m2!1i1024!2i768!4f48.030205300662466!3m3!1m2!1s0x40c631c1ab799d29%3A0x648a7bb538623a68!2z0LLRg9C70LjRhtGPINCf0LDRgdGC0LXRgNCwLCAyMiwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e1!3m2!1sru!2sua!4v1495534140151" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen)

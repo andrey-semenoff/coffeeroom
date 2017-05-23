@@ -7,14 +7,69 @@ block vars
 
 block content
 
-	// ====== slider =======
-	.slider
-		._container
+	// ====== contacts =======
+	.contacts-page
 
-			.slider__text
-				h1.slider__title возьми тепло с собой
+		// ====== breadcrumbs =======
+		.breadcrumbs
+			._container
+				ul.breadcrumbs__list
+					li.breadcrumbs__item
+						a.breadcrumbs__link(href="#") Главная
+					li.breadcrumbs__item
+						span.breadcrumbs__link.breadcrumbs__link_active= page_title
 
-				h2.slider__subtitle
-					div.slider__subtitle-bold 20 % скидка
-					div на кофе с собой
+		// ====== contacts__address =======
+		.contacts__address
+			._container
+				._row
 
+					.contacts__address-group.contacts__address-group_left
+						.contacts__address-title Адрес
+						.contacts__address-text Украина, г.Одесса, ул. Пастера 22
+
+						.contacts__address-title Режим работы
+						.contacts__address-text Пн.-Сб: с 10.00 до 20.00 Воскресенье: выходной
+
+						.contacts__address-title Телефон
+						.contacts__address-text +3 (050) 123-45-67
+
+						.contacts__address-title Email
+						.contacts__address-text coffeeroom_info@mail.ru
+
+					.contacts__address-group.contacts__address-group_right
+						.contacts__address-title На карте
+						.contacts__address-map
+							.google-map(onMouseLeave="document.querySelector('.google-map__overlay').style.pointerEvents=''")
+								.google-map__overlay(onClick="style.pointerEvents='none'")
+								iframe(src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d382.9518520517521!2d30.72452958661035!3d46.491395445711184!2m2!1f0!2f0.2602826021433933!3m2!1i1024!2i768!4f48.030205300662466!3m3!1m2!1s0x40c631c1ab799d29%3A0x648a7bb538623a68!2z0LLRg9C70LjRhtGPINCf0LDRgdGC0LXRgNCwLCAyMiwg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e1!3m2!1sru!2sua!4v1495534140151" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen)
+
+		.katering__contacts
+			._container
+				p Также Вы можете воспользоваться функцией <strong>Контактная информация</strong>, которая находится ниже.
+				p Пишите по любым вопросам, мы с вами свяжемся и всё обсудим.
+
+		// ====== contacts__form =======
+		form.contacts__form
+			.title.katering__form-title Контактная информация
+
+			._row
+
+				.katering__form-left
+					label.katering__form-label
+						.katering__form-label-text Ваше имя
+						input.katering__form-input(type="text" name="name")
+					label.katering__form-label
+						.katering__form-label-text Телефон
+						input.katering__form-input(type="tel" name="phone")
+					label.katering__form-label
+						.katering__form-label-text Email
+						input.katering__form-input(type="email" name="email")
+					label.katering__form-label
+						.katering__form-label-text Комментарий
+						textarea.katering__form-textarea(name="comment")
+
+						button.button.study-form__button(type="submit") Отправить
+
+				.katering__form-right
+					img.katering__form-img(src="img/katering/coffee-cup.png" alt="coffee cup")

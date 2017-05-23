@@ -1,0 +1,49 @@
+/*! ===== contacts ===== */
+.contacts-page {
+
+}
+
+.contacts__form {
+  @extend .katering__form;
+}
+
+.contacts__address {
+  margin-top: 40px;
+}
+
+.contacts__address-group {
+
+}
+
+.contacts__address-group_left {
+  float: left;
+  width: 40%;
+
+  @include media(640) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.contacts__address-group_right {
+  float: right;
+  width: 60%;
+
+  @include media(640) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.contacts__address-title {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.contacts__address-text {
+  margin-top: 5px;
+}
+
+.contacts__address-map {
+  margin-top: 15px;
+}

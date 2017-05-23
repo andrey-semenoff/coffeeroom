@@ -116,6 +116,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 30px;
   text-transform: uppercase;
 
+  @include media(480) {
+    font-size: 26px;
+  }
+
   &:after {
     content: '';
     position: absolute;

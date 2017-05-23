@@ -1,0 +1,81 @@
+/*! ===== coffee ===== */
+.coffee {
+
+}
+
+.coffee__slider {
+  height: 300px;
+  @extend .study__slider;
+  background-image: url(../img/coffee_to_go/bg.jpg);
+}
+
+/*! ===== coffee__text ===== */
+.coffee__text-holder {
+  margin-top: 100px;
+
+  @include media(480) {
+    margin-top: 25px;
+  }
+}
+
+.coffee__text-title {
+
+}
+
+.coffee__text {
+
+
+}
+
+.coffee__text {
+  line-height: 1.5rem;
+
+  p:nth-of-type(1) {
+    margin: 15px 0;
+    font-size: 25px;
+    line-height: inherit;
+  }
+}
+
+.coffee__text_left {
+  .coffee__text-img {
+    float: right;
+    margin-left: 15px;
+
+    @include media(992) {
+      float: none;
+      width: 100%;
+      margin: 15px 0 0;
+    }
+  }
+}
+
+.coffee__text-img {
+
+}
+
+.coffee__text-inner-title {
+  margin-top: 35px;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $red_text;
+}
+
+
+/*! ===== coffee__map ===== */
+.coffee__map  {
+  padding: 60px 0 90px;
+
+  @include media(480) {
+    padding: 25px;
+  }
+}
+
+.coffee__map-title  {
+
+}
+
+.coffee__map-iframe {
+  @extend .cafe__map-iframe;
+}
