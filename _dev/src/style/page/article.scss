@@ -1,0 +1,53 @@
+/*! --- article-page --- */
+.article-page {
+
+}
+
+.article__title_more {
+  padding: 70px 0 0;
+  margin-bottom: -20px;
+
+  &:after {
+    display: none;
+  }
+}
+
+.article-page__text {
+  margin-top: 45px;
+  line-height: 1.5rem;
+}
+
+.article-page__text_left {
+
+  .article-page__img {
+    float: left;
+    margin-right: 15px;
+
+    @include media(480) {
+      float: none;
+      margin: 0;
+    }
+  }
+
+}
+
+.article-page__text_right {
+
+  .article-page__img {
+    float: right;
+    margin-left: 15px;
+
+    @include media(480) {
+      float: none;
+      margin: 0;
+    }
+  }
+}
+
+.article-page__img {
+  width: 45%;
+
+  @include media(480) {
+    width: 100%;
+  }
+}
