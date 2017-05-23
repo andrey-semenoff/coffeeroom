@@ -4,7 +4,13 @@ footer.footer {
 	background-color: $brown;
 }
 
+.footer_404 {
+  position: relative;
+  //height: $footer-height;
+}
+
 .bottom-line {
+  position: relative;
   padding: 10px 15px;
   background-color: #fff;
   font-size: 12px;

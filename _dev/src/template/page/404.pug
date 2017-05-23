@@ -1,0 +1,87 @@
+doctype html
+html(lang="ru-RU")
+
+	block vars
+
+	head
+		include ../section/_head
+	body
+
+		.wrapper
+
+			include ../common/mixins
+
+			include ../section/header
+
+			include ../section/menu
+
+
+			.pnf__links
+				a.pnf__link(href="/") Вернуться на главную
+				a.pnf__link(href="/catalog.html") Перейти в каталог
+
+		// ====== footer =======
+		footer.footer.footer_404
+			._container
+				._row
+
+					.logo
+						a.logo__link(href="/")
+							img.logo__img(src="img/logo_test.png")
+
+					.contacts
+
+						.phones
+							ul.phones__list
+
+								li.phones__item
+									a.phones__link(href="tel:+30501234567") + 3 (050) 123-45-67
+
+
+						.social
+							ul.social__list
+
+								li.social__item
+									a.social__link(href="#")
+										span.fa.fa-vk
+
+								li.social__item
+									a.social__link(href="#")
+										span.fa.fa-twitter
+
+								li.social__item
+									a.social__link(href="#")
+										span.fa.fa-facebook
+
+								li.social__item
+									a.social__link(href="#")
+										span.fa.fa-instagram
+
+								li.social__item
+									a.social__link(href="#")
+										span.fa.fa-pinterest-p
+
+		.bottom-line
+			._container
+				._row
+
+					.copyright
+						span.copyright__text &copy; 2017 Все права защищены.
+
+					.skylogic
+						.skylogic__text Создание сайта
+						a.skylogic__link(href="#")
+							img.skylogic__img(src="img/logo_skylogic.png" alt="skylogic")
+
+
+	// ====== scripts =======
+	// Start Google analytics
+	//script.
+	// End Google analytics
+
+	// Yandex.Metrika counter
+	//script(type="text/javascript").
+	//noscript
+	// /Yandex.Metrika counter
+
+

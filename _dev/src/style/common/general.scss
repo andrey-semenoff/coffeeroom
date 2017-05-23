@@ -17,6 +17,9 @@ $body-color: #fff;
 $body-font: $PTSans-Regular;
 $body-font-color: #000;
 
+
+$footer-height: 156px;
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -26,10 +29,12 @@ $body-font-color: #000;
 }
 
 html {
+  height: 100%;
   font-size: 16px;
 }
 
 body {
+  height: 100%;
   font-family: $body-font;
   font-size: 100%;
   color: $body-font-color;
@@ -38,6 +43,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+ .wrapper {
+   position: relative;
+   min-height: 100%;
+   margin: 0 auto;
+   overflow: hidden;
+   margin-bottom: - $footer-height;
+
+   background: #f3f3f5 url(../img/404/bg.jpg) center no-repeat;
+   background-size: auto 65%;
+
+   &:after {
+     content: '';
+     display: block;
+     height: $footer-height;
+   }
+ }
 
 /*! --- Preload images --- */
 // body:before {

@@ -1,0 +1,30 @@
+/*! ===== page-not-found ===== */
+.pnf__links {
+  position: absolute;
+  top: 45%;
+  right: 33%;
+  text-align: center;
+
+  @include media(1200) {
+    right: 25%;
+  }
+  @include media(900) {
+    right: 20%;
+  }
+  @include media(768) {
+    right: 15%;
+  }
+  @include media(640) {
+    right: 10%;
+  }
+  @include media(480) {
+    right: 5%;
+  }
+}
+
+.pnf__link {
+  display: block;
+  color: #000;
+  text-decoration: underline;
+  margin-top: 15px;
+}
