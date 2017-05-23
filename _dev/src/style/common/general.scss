@@ -96,9 +96,15 @@ h1, h2, h3, h4, h5, h6, p {
 /*! --- standart buttons --- */
 .button {
   display: inline-block;
-  border: none;
+  line-height: 35px;
+  border: 1px solid #000;
+  color: #000;
+  transition: all 0.5s;
+  background-color: #fff;
 
   &:hover {
+    background-color: #000;
+    color: #fff;
     cursor: pointer;
   }
 }

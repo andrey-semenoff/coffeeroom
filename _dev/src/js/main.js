@@ -45,11 +45,11 @@ $(function () {
   		"<span class='icon icon-arrow-right_big'></span>"
   	],
   	responsive: {
-  		992: {
+  		1150: {
         items: 3
       },
 
-      550: {
+      815: {
       	items: 2
       },
 
@@ -63,9 +63,10 @@ $(function () {
   var $cafe_about_carousel = $(".owl-carousel[data-type='cafe__about']");
 
 	$cafe_about_carousel.on('initialized.owl.carousel', function (e) {
-		console.log("init")
-		$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(0).addClass('mini');
-		$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(2).addClass('mini');
+		if( $(window).width() > 992 ) {
+			$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(0).addClass('mini');
+			$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(2).addClass('mini');
+		}
 	});
 
 	$cafe_about_carousel.owlCarousel({
@@ -92,9 +93,11 @@ $(function () {
       }
   	}
   }).on('translated.owl.carousel', function (e) {
-	  $(".owl-carousel[data-type='cafe__about']").find('.owl-item').removeClass('mini');
-	  $(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(0).addClass('mini');
-	  $(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(2).addClass('mini');
+		if( $(window).width() > 992 ) {
+			$(".owl-carousel[data-type='cafe__about']").find('.owl-item').removeClass('mini');
+			$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(0).addClass('mini');
+			$(".owl-carousel[data-type='cafe__about']").find('.owl-item.active').eq(2).addClass('mini');
+		}
 	});
 
 
