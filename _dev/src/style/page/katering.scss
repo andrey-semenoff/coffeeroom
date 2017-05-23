@@ -1,0 +1,119 @@
+/*! --- katering --- */
+.katering {
+
+}
+
+.katering__about {
+
+}
+
+.katering__title {
+  margin-top: 35px;
+  font-size: 30px;
+}
+
+.katering__text {
+  margin-top: 20px;
+
+  @include media(900) {
+    p:nth-of-type(1) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.katering__text_left {
+  .katering__text-img {
+    float: left;
+    margin-right: 15px;
+
+    @include media(900) {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+
+.katering__text_right {
+  .katering__text-img {
+    float: right;
+    margin-left: 15px;
+
+    @include media(900) {
+      float: none;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+.katering__contacts {
+  margin-top: 25px;
+  a {
+    color: #000;
+    border-bottom: 1px dashed #000;
+  }
+}
+
+.katering__form {
+  width: 720px;
+  padding: 25px 35px;
+  margin: 70px auto 95px;
+  border: 1px solid rgba(#000, 0.2);
+  box-shadow: 0 0 5px 0 rgba($black_text, 0.3);
+
+  @include media(992) {
+    width: 100%;
+  }
+}
+
+.katering__form-title {
+  padding-top: 0;
+
+  @include media(480) {
+    font-size: 24px;
+  }
+
+}
+
+.katering__form-left {
+  float: left;
+  width: 45%;
+
+  @include media(992) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.katering__form-right {
+  float: right;
+  width: 55%;
+
+  @include media(992) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.katering__form-label {
+  @extend .cafe__form-label;
+}
+
+.katering__form-input {
+  @extend .cafe__form-input;
+}
+
+.katering__form-textarea {
+  @extend .cafe__form-textarea;
+}
+
+.katering__form-img {
+  display: block;
+  margin: auto;
+
+  @include media(992) {
+    margin-top: 25px;
+  }
+}
