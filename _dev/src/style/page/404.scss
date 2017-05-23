@@ -1,4 +1,38 @@
 /*! ===== page-not-found ===== */
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  min-height: 768px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: - $footer-height;
+
+  background: #f3f3f5 url(../img/404/bg.jpg) center no-repeat;
+  background-size: auto 65%;
+
+  @include media(768) {
+    background-size: auto 45%;
+  }
+  @include media(480) {
+    background-size: auto 40%;
+  }
+  @include media(450) {
+    background-position-x: 58%;
+    background-size: auto 30%;
+  }
+  @include media(360) {
+    background-position-x: 64%;
+    background-size: auto 30%;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    height: $footer-height;
+  }
+}
+
 .pnf__links {
   position: absolute;
   top: 45%;

@@ -44,22 +44,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
- .wrapper {
-   position: relative;
-   min-height: 100%;
-   margin: 0 auto;
-   overflow: hidden;
-   margin-bottom: - $footer-height;
-
-   background: #f3f3f5 url(../img/404/bg.jpg) center no-repeat;
-   background-size: auto 65%;
-
-   &:after {
-     content: '';
-     display: block;
-     height: $footer-height;
-   }
- }
 
 /*! --- Preload images --- */
 // body:before {
