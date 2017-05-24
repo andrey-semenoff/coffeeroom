@@ -152,7 +152,7 @@
   margin-top: 40px;
   font-size: 18px;
 
-  @include media(992) {
+  @include media(1270) {
     width: 50%;
   }
 
@@ -161,6 +161,7 @@
   }
 
   .product__img-holder {
+    height: 360px;
 
     @include media(1200) {
       max-width: 250px;
@@ -176,10 +177,11 @@
 
     &:hover {
       padding: 20px;
-      height: auto;
+      //height: auto;
       text-align: center;
 
-      img {
+      .products__img {
+        height: 50%;
         position: static;
         top: auto;
         left: auto;
@@ -199,11 +201,13 @@
   }
 }
 .products__img {
-  transition: width 0.5s;
+  max-height: 220px;
+  height: 100%;
+  //transition: height 0.5s;
 }
 
 .products__img_sm {
-  width: 30%;
+  height: 30% !important;
 }
 
 .product__info_inner {
